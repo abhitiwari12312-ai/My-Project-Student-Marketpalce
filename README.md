@@ -1,2 +1,38 @@
-# My-Project-Student-Marketpalce
-This is my ongoing project
+# CampusMart – Student Marketplace
+
+A student-focused marketplace where students can buy and sell useful items such as books, electronics, furniture, and study materials.
+
+## 📌 About the Project
+
+CampusMart is a frontend web project designed to make buying and selling within a student community simple and convenient.
+
+The platform provides a clean interface where students can explore listings, search for products, filter items by category, and create their own listings.
+
+## ✨ Features
+
+- 🔍 Search for products
+- 🏷️ Filter listings by category
+- 📚 Books and study materials
+- 💻 Electronics listings
+- 🪑 Furniture listings
+- 🛍️ Create a new listing
+- 📱 Responsive design
+- ⚡ Interactive frontend using JavaScript
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+
+## 📂 Project Structure
+
+```text
+My-Project-Student-Marketplace/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
