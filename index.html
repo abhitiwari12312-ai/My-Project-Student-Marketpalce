@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusMart | Student Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <div class="logo">CM</div>
+      <div>
+        <h1>CampusMart</h1>
+        <span>Student Marketplace</span>
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#listings">Listings</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <button class="sell-btn" id="sellTopBtn">+ Sell Item</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">BUY • SELL • CONNECT</p>
+        <h2>Find what you need.<br><span>Sell what you don't.</span></h2>
+        <p class="hero-text">A simple marketplace made for students to buy and sell books, electronics, furniture and more within their campus community.</p>
+        <div class="search-box">
+          <input id="searchInput" type="text" placeholder="Search books, laptops, cycles...">
+          <button id="searchBtn">Search</button>
+        </div>
+        <div class="stats">
+          <div><strong>1,200+</strong><small>Listings</small></div>
+          <div><strong>850+</strong><small>Students</small></div>
+          <div><strong>20+</strong><small>Categories</small></div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="floating-card top-card">📚 <b>Engineering Books</b><small>Starting ₹199</small></div>
+        <div class="mock-phone">
+          <div class="phone-top"></div>
+          <p>Popular near you</p>
+          <div class="mini-product"><span>💻</span><div><b>Laptop Stand</b><small>₹650 · 2 km away</small></div></div>
+          <div class="mini-product"><span>🎧</span><div><b>Wireless Headphones</b><small>₹900 · 1.5 km away</small></div></div>
+          <div class="mini-product"><span>📖</span><div><b>Java Complete Guide</b><small>₹250 · 800 m away</small></div></div>
+        </div>
+        <div class="floating-card bottom-card">⚡ Quick deals<br><small>Student-friendly prices</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="listings">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Popular listings</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-category="All">All</button>
+          <button class="filter" data-category="Books">Books</button>
+          <button class="filter" data-category="Electronics">Electronics</button>
+          <button class="filter" data-category="Furniture">Furniture</button>
+        </div>
+      </div>
+      <div class="products" id="productGrid"></div>
+      <p class="empty" id="emptyState">No listings found.</p>
+    </section>
+
+    <section class="how" id="how">
+      <div>
+        <p class="eyebrow">SIMPLE & SAFE</p>
+        <h2>How CampusMart works</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span><h3>Find an item</h3><p>Search through student listings and discover useful items near you.</p></div>
+        <div class="step"><span>02</span><h3>Connect</h3><p>Contact the seller and decide a convenient place and time to meet.</p></div>
+        <div class="step"><span>03</span><h3>Deal</h3><p>Inspect the item, agree on the price and complete your exchange.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>CampusMart</strong>
+    <span>Built for students, by students.</span>
+  </footer>
+
+  <div class="modal" id="sellModal">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <p class="eyebrow">CREATE LISTING</p>
+      <h2>Sell an item</h2>
+      <form id="sellForm">
+        <input id="itemName" required placeholder="Item name">
+        <select id="itemCategory" required>
+          <option value="">Choose category</option>
+          <option>Books</option>
+          <option>Electronics</option>
+          <option>Furniture</option>
+        </select>
+        <input id="itemPrice" type="number" min="1" required placeholder="Price (₹)">
+        <input id="itemSeller" required placeholder="Your name">
+        <button class="submit-btn">Publish Listing</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
