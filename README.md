@@ -12,11 +12,6 @@ buy and sell products within their campus community.
 [📂 View on GitHub](https://github.com/abhitiwari12312-ai/My-Project-Student-Marketpalce)
 
 
-
-# CampusMart – Student Marketplace
-
-A student-focused marketplace where students can buy and sell useful items such as books, electronics, furniture, and study materials.
-
 ## 📌 About the Project
 
 CampusMart is a frontend web project designed to make buying and selling within a student community simple and convenient.
