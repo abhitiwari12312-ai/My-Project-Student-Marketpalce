@@ -14,7 +14,7 @@ buy and sell products within their campus community.
 
 ## 📌 About the Project
 
-CampusMart is a frontend web project designed to make buying and selling within a student community simple and convenient.
+This is a frontend web project designed to make buying and selling within a student community simple and convenient.
 
 The platform provides a clean interface where students can explore listings, search for products, filter items by category, and create their own listings.
 
